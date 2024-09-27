@@ -50,7 +50,7 @@ namespace Drones
                 // Démarrage
                 Application.Run(new AirSpace(fleet, buildings));
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Il y a plus de 10 drones.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
