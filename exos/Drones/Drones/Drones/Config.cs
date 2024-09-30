@@ -10,7 +10,6 @@ namespace Drones
     {
         public const int WIDTH = 1200;       
         public const int HEIGHT = 600;
-
         public const int charge = 1000;
     }
 }

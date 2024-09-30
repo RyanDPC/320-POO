@@ -11,7 +11,7 @@ namespace Drones
         static void Main()
         {
             List<Drone> fleet = new List<Drone>();
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 9; i++)
             {
                 // To customize application configuration such as set high DPI settings or default font,
                 // see https://aka.ms/applicationconfiguration.
@@ -19,7 +19,7 @@ namespace Drones
 
                 // Création de la flotte de drones
                 
-                Drone drone = new Drone();
+                Drone drone = new Drone(500, 500);
                 drone.X = Helper.PositionX();
                 drone.Y = Helper.PositionY();
                 drone.Name = $"Joe_{i + 1}";
