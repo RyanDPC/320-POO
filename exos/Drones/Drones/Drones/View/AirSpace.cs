@@ -1,4 +1,6 @@
+using Drones.Model;
 using Drones.View;
+
 
 namespace Drones
 {
@@ -14,6 +16,7 @@ namespace Drones
         // La flotte est l'ensemble des drones qui évoluent dans notre espace aérien
         private List<Drone> fleet;
         private List<Building> buildings;
+        private Dispatch dispatch = new Dispatch();
 
         BufferedGraphicsContext currentContext;
         BufferedGraphics airspace;
@@ -70,7 +73,7 @@ namespace Drones
                     }
 
                 }
-
+                dispatch.Render(airspace);
                 airspace.Render();
             }
             catch (Exception e)

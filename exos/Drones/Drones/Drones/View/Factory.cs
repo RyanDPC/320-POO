@@ -30,7 +30,7 @@ namespace Drones.View
                 List<Box> boxes = new List<Box>();
                 Box box = new Box(i++, Helper.BoxKilo());
                 boxes.Add(box);
-                Console.WriteLine("Carton Produit" + box.Kilo);
+                Console.WriteLine("Carton Produit" + " " + box.Kilo+"kg");
                 BoxTimer = 0;
             }
         
