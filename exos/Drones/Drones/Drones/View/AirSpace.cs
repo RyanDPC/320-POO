@@ -88,12 +88,16 @@ namespace Drones
                 {
                     drone.Update(interval);
                 }
+                foreach (Building building in buildings)
+                {
+                    if(building is  Factory factory)
+                    factory.Update(interval);
+                }
             }
             catch(Exception e) 
             {
-                throw new Exception ("Erreur lors de la mise à jour du drone", e);
+                throw new Exception ("Erreur lors de la mise à jour...",e);
             }
-            
         }
 
         // Méthode appelée à chaque frame

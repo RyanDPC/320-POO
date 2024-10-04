@@ -9,11 +9,19 @@ namespace Drones.Model
     public partial class Box
     {
         private int _id;
-        private string _kilo;
+        private int _kilo;
         private Color _color;
         public int Id { get => _id; set => _id = value; }
-        public string Kilo { get => _kilo; set => _kilo = value; }
+        public int Kilo { get => _kilo; set => _kilo = value; }
         public Color Color { get => _color; set => _color = Color; }
-        public Box() { }
+        public Box(int id, int kilo) 
+        {
+            this._id = id;
+            this._kilo = kilo;
+        }
+        //public new void Render(BufferedGraphics drawingSpace)
+        //{
+        //    base.Render(drawingSpace);
+        //}
     }
 }

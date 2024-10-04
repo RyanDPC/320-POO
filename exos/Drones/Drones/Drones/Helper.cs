@@ -12,13 +12,23 @@ namespace Drones
         static Random random = new Random();
         public static int PositionX()
         {
-
-
-
             int valeurPositionX = random.Next(0, 1100);
 
             return valeurPositionX;
+        }
+        public static int BoxKilo() 
+        {
 
+            int valeurKilo = random.Next(5, 10);
+            
+            return valeurKilo;
+        }
+        public static int BoxTime() 
+        {
+
+            int TimeBox = random.Next(0, 2000);
+
+            return TimeBox;
         }
         public static int PositionY()
         {

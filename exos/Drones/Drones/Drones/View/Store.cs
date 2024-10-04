@@ -27,6 +27,10 @@ namespace Drones.View
         {
             this._id = id;
         }
+        public new void Update(int interval)
+        {
+
+        }
         public Pen storeBrush = new Pen(new SolidBrush(color), 3);
 
         public new void Render(BufferedGraphics drawingSpace)

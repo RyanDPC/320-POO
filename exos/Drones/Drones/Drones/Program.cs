@@ -1,3 +1,4 @@
+using Drones.Model;
 using Drones.View;
 
 namespace Drones
@@ -25,15 +26,7 @@ namespace Drones
                 drone.Name = $"Joe_{i + 1}";
                 fleet.Add(drone);
             }
-            //List<Drone> fleet = new List<Drone>();
-            //Drone drone1 = new Drone();
-            //    drone1.X = Helper.PositionX();
-            //    drone1.Y = Helper.PositionY();
-            //    drone1.Name = "Jack";
-            //    drone1.Charge = 10000;
-            //    fleet.Add(drone1);
-            
-
+          
 
             List<Building> buildings = new List<Building>();
             
