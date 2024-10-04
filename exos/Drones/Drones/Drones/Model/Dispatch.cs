@@ -7,25 +7,30 @@ using System.Threading.Tasks;
 
 namespace Drones.Model
 {
-    internal class Dispatch : IDispatchable
+    public class Dispatch : IDispatchable
     {
-        public List<Box> Boxes { get => boxes; set => boxes = value; }
+        public List<Box> Boxes{ get; set; }
+       
 
         private SolidBrush dispatchBrush = new SolidBrush(Color.BlueViolet);
         private int x = 25;
         private int y = 25;
         private int width = 100;
         private int height = 100;
-        private List<Box> boxes;
 
+        public Dispatch()
+        {
+            Boxes = new List<Box>();  
+        }
         public void AddBox(Box box)
         {
-            boxes.Add(box);
+            Boxes.Add(box);
         }
 
         public void RemoveBox(Box box)
         {
-            boxes.Remove(box);
+            
+            Boxes.Remove(box);
         }
 
         public void Render(BufferedGraphics drawingSpace)
