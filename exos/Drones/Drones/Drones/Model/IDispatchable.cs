@@ -8,5 +8,9 @@ namespace Drones.Model
 {
     internal interface IDispatchable
     {
+        List<Box> Boxes { get; set; }
+        public void AddBox(Box box);
+        public void RemoveBox(Box box);
+        
     }
 }
