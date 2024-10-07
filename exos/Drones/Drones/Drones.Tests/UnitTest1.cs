@@ -32,6 +32,10 @@ namespace Drones
             // Assert
             Assert.AreEqual(EvacuationState.Free, drone.GetEvacuationState());
         }
+        public void Test_the_Box()
+        {
+
+        }
 
     }
 }

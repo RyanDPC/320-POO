@@ -19,9 +19,9 @@ namespace Drones.Model
             this._id = id;
             this._kilo = kilo;
         }
-        //public new void Render(BufferedGraphics drawingSpace)
+        //public void Render(BufferedGraphics drawingSpace)
         //{
-        //    base.Render(drawingSpace);
+        
         //}
     }
 }

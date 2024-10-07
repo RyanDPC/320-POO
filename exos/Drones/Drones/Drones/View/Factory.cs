@@ -23,15 +23,14 @@ namespace Drones.View
         {
             this._id = id;
         }
-        public new void Update(int interval, Dispatch Boxes)
+        public void Update(int interval, Dispatch Boxes)
         {
             BoxTimer += interval;
 
-            if (BoxTimer >= 5000 + Helper.BoxTime())
+            if (BoxTimer <= 5000 + Helper.BoxTime())
             {
-                
-                Console.WriteLine(box.Id + "Carton Produit" + " " + box.Kilo + "kg");
                 Box box = new Box(i++, Helper.BoxKilo());
+                Console.WriteLine(box.Id + " Carton Produit" + " " + box.Kilo + "kg");
                 Boxes.AddBox(box);
                 BoxTimer = 0;
 
