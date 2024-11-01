@@ -1,7 +1,7 @@
 ﻿using static System.Net.Mime.MediaTypeNames;
 using System.Text;
 
-namespace Drones
+namespace Boat
 {
     internal static class Program
     {
@@ -10,7 +10,6 @@ namespace Drones
         /// </summary>
         static void Main()
         {
-            
         
         }
     }

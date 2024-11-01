@@ -3,6 +3,10 @@ using System.Text;
 
 namespace Boat
 {
-
+    public class Container
+    {
+        private int _id;
+        private float _weight;
+    }
 
 }
